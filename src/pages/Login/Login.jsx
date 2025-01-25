@@ -12,9 +12,10 @@ const Login = () => {
   const navigate = useNavigate();
      
     const handleSubmit = async(e)=>{
+      const ApiUrl = import.meta.env.BASE_URL;
       e.preventDefault();
       try{
-        const response = await axios.post(`${BASE_URL}/users/login`,
+        const response = await axios.post(`${ApiUrl}/users/login`,
                                       {username : email,password});
                                       dispatch(setCredentials({ token: response.data.token }));
                                       console.log('Done',response.data);

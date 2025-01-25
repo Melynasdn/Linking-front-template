@@ -22,9 +22,11 @@ const handleLogout = () =>{
 }
 
 useEffect(() => {
+
   const fetchUsers = async () => {
+    const ApiUrl = import.meta.env.BASE_URL;
     try {
-      const response = await axios.get(`${BASE_URL}/users/all`, {
+      const response = await axios.get(`${ApiUrl}/users/all`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       console.log('Fetched succesfull ', response.data);
