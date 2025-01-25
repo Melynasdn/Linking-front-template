@@ -1,0 +1,15 @@
+.Dashboard-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.logout-button{
+    background-color: burlywood;
+    color: rgb(37, 3, 68);
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+}
