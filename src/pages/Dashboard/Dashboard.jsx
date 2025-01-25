@@ -38,7 +38,7 @@ useEffect(() => {
       }
 
     }
-  };
+  };   
   if(token) fetchUsers();
   
 }, [token]);
